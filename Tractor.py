@@ -33,8 +33,6 @@ random_button_img = simplegui.load_image("http://i.imgur.com/CjlFXZb.png")
 #20 by 20
 hourglass_img = simplegui.load_image("http://i.imgur.com/8c5hNPI.png")
 
-#220 by 280
-lmao_img = simplegui.load_image("http://i.imgur.com/5xhCOS3.png")
 #240 by 160
 title_img = simplegui.load_image("http://i.imgur.com/KjCoQJm.png")
 
@@ -1324,8 +1322,6 @@ def draw(canvas):
     elif playing == "Help":
         for line in help_text:
             canvas.draw_text(line[1], line[0], 20, 'Black')
-        canvas.draw_image(lmao_img, [110, 140], [220, 280],
-                          [515, 490], [220*0.8, 280*0.8])
         back_button.draw(canvas)
     # everything after this is for In Game
     if playing == "Home" or playing == "Settings" or playing == "Help":
